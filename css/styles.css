@@ -7,6 +7,8 @@
   --logo-color: #000000;
   --button-color: #188ce8;
   --contacts-color: rgba(255, 255, 255, 0.6);
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .list {
   list-style: none;
@@ -193,6 +195,12 @@ ul {
 /*=======END FEATURES=========*/
 
 /*=======WHAT ARE WE DOING=========*/
+.activity {
+  padding-bottom: 94px;
+}
+.activity-item {
+  width: 370px;
+}
 
 .activity-title {
   font-weight: 700;
@@ -228,13 +236,19 @@ ul {
   margin-top: 30px;
   margin-left: 30px;
 }
-
+.team-card {
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 .team-content {
   font-size: 16px;
@@ -295,7 +309,7 @@ ul {
 /*=======PORTFOLIO=========*/
 .portfolio-filter {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .filter-item:not(:last-child) {
@@ -329,8 +343,8 @@ ul {
   margin-left: 30px;
   border-bottom: 1px solid #eeeeee;
 }
-.portfolio-img {
-  margin-bottom: 20px;
+.project-card {
+  padding: 20px 24px;
 }
 .portfolio-subtitle {
   font-weight: 700;
